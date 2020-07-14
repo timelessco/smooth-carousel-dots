@@ -1,13 +1,15 @@
 {
   "packages": ["packages/*"],
   "version": "independent",
+  "changelogPreset": "angular",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "registry": "https://registry.npmjs.org/",
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "message": "chore(release): :rocket: publish"
-    }
+      "message": "chore(release): :rocket: releash"
+    },
+    "version": { "push": false }
   }
 }

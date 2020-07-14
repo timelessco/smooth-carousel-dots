@@ -10,6 +10,7 @@
     ]
   },
   "scripts": {
+    "lerna": "lerna",
     "commit": "gacp --no-push",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "prestart": "yarn && yarn bootstrap",
@@ -17,6 +18,7 @@
     "clean": "lerna clean --yes && rm -rf node_modules",
     "format": "lerna run format --no-private --stream",
     "lint": "lerna run lint --no-private --stream",
+    "lerna:version": "lerna version",
     "release": "lerna publish"
   },
   "devDependencies": {
