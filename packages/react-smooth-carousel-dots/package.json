@@ -1,0 +1,35 @@
+{
+  "name": "react-smooth-carousel-dots",
+  "description": "",
+  "keywords": [
+    "carousel-dots",
+    "dots",
+    "carousel",
+    "react-carousel-dots",
+    "carousel-component"
+  ],
+  "sideEffects": false,
+  "author": "Timeless <hello@timeless.co>",
+  "homepage": "https://github.com/timelessco/smooth-carousel-dots#readme",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timelessco/smooth-carousel-dots.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timelessco/smooth-carousel-dots/issues"
+  },
+  "scripts": {},
+  "peerDependencies": {
+    "react": "16.x"
+  }
+}
