@@ -31,7 +31,8 @@
   },
   "scripts": {
     "format": "prettier --write \"./**/*.{js,jsx,json}\"",
-    "lint": "eslint src --ext .js --config ../../.eslintrc"
+    "lint": "eslint src --ext .js --config ../../.eslintrc",
+    "version": "yarn lint"
   },
   "peerDependencies": {
     "react": "16.x"
