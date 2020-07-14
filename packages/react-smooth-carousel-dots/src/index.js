@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 
-import useCarouselDots from "./use-carousel-dots";
+import useCarouselDots from "./use-carousel-dots"
 
-const CarouselDots = (props) => {
-  const { total, current, visible, size, margin, padding } = props;
+const CarouselDots = props => {
+  const { total, current, visible, size, margin, padding } = props
 
   const {
     defaultHolderStyle,
@@ -30,11 +30,11 @@ const CarouselDots = (props) => {
     size,
     margin,
     padding,
-  });
+  })
 
   return (
     <div style={{ ...defaultHolderStyle, ...getHolderStyle }}>
-      {dots.map((dot) => {
+      {dots.map(dot => {
         return (
           <div key={dot} style={{ ...defaultDotsStyle, ...getDotsStyle }}>
             <div
@@ -50,10 +50,10 @@ const CarouselDots = (props) => {
               }}
             />
           </div>
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default CarouselDots;
+export default CarouselDots
