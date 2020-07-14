@@ -1,6 +1,7 @@
 {
   "name": "smooth-carousel-dots",
   "private": true,
+  "description": "Custom Carousel Dots component to plug in to any your Carousels.",
   "license": "MIT",
   "author": "Timeless <hello@timeless.co>",
   "workspaces": {
