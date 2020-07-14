@@ -17,7 +17,6 @@
     "clean": "lerna clean --yes && rm -rf node_modules",
     "format": "lerna run format --no-private --stream",
     "lint": "lerna run lint --no-private --stream",
-    "version": "lerna version --no-push",
     "release": "lerna publish"
   },
   "devDependencies": {
