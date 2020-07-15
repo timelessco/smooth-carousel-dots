@@ -1942,7 +1942,7 @@ contains-path@^0.1.0:
   resolved "https://registry.yarnpkg.com/contains-path/-/contains-path-0.1.0.tgz#fe8cf184ff6670b6baef01a9d4861a5cbec4120a"
   integrity sha1-/ozxhP9mcLa67wGp1IYaXL7EEgo=
 
-conventional-changelog-angular@^5.0.3:
+conventional-changelog-angular@^5.0.0, conventional-changelog-angular@^5.0.3:
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-5.0.10.tgz#5cf7b00dd315b6a6a558223c80d5ef24ddb34205"
   integrity sha512-k7RPPRs0vp8+BtPsM9uDxRl6KcgqtCJmzRD1wRtgqmhQ96g8ifBGo9O/TZBG23jqlXS/rg8BKRDELxfnQQGiaA==
@@ -1968,6 +1968,14 @@ conventional-changelog-core@^3.1.6:
     read-pkg "^3.0.0"
     read-pkg-up "^3.0.0"
     through2 "^3.0.0"
+
+conventional-changelog-metahub@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-metahub/-/conventional-changelog-metahub-4.0.1.tgz#60e41958de0e7270c213d4f0d235c860c520946e"
+  integrity sha512-iiEjdMsI2CEFC+eXoTOTTG64QvNAUOTRFBUNRIzxczbzYCYC4PJyh0gNGpRGo1F8uCueQfXrQL2PFtDq50EtUA==
+  dependencies:
+    conventional-changelog-angular "^5.0.0"
+    lodash "^4.17.4"
 
 conventional-changelog-preset-loader@^2.1.1:
   version "2.3.4"
@@ -4094,7 +4102,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.2.1:
+lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.2.1:
   version "4.17.19"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
