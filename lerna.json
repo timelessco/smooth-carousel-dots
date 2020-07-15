@@ -8,9 +8,7 @@
   "command": {
     "version": {
       "message": "chore(release): publish",
-      "conventionalCommits": true,
-      "yes": true,
-      "push": false
+      "conventionalCommits": true
     }
   }
 }
