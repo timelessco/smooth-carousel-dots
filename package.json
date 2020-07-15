@@ -16,7 +16,7 @@
     "clean": "lerna clean --yes && rm -rf node_modules",
     "commit": "gacp --no-push",
     "format": "prettier --write \"./**/*.{js,jsx}\"",
-    "lerna-publish": "lerna publish",
+    "lerna-publish": "lerna publish from-git",
     "lerna-version": "lerna version",
     "lint": "eslint . --ext .js,.jsx --fix",
     "lint:package": "sort-package-json",
