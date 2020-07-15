@@ -10,16 +10,16 @@
     ]
   },
   "scripts": {
-    "commit": "gacp --no-push",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "prestart": "yarn && yarn bootstrap",
-    "start": "yarn prestart",
     "build": "lerna run build --no-private --stream --parallel",
     "clean": "lerna clean --yes && rm -rf node_modules",
+    "commit": "gacp --no-push",
     "format": "lerna run format --no-private --stream --parallel",
-    "lint": "lerna run lint --no-private --stream --parallel",
+    "lerna-publish": "lerna publish",
     "lerna-version": "lerna version",
-    "lerna-publish": "lerna publish"
+    "lint": "lerna run lint --no-private --stream --parallel",
+    "prestart": "yarn && yarn bootstrap",
+    "start": "yarn build"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -29,6 +29,8 @@
     "@babel/plugin-transform-runtime": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
     "babel-eslint": "^10.1.0",
@@ -45,7 +47,9 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "gacp": "^2.10.0",
+    "husky": "^4.2.5",
     "lerna": "^3.22.1",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
