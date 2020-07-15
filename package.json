@@ -16,7 +16,9 @@
     "start": "yarn prestart",
     "clean": "lerna clean --yes && rm -rf node_modules",
     "format": "lerna run format --no-private --stream --parallel",
-    "lint": "lerna run lint --no-private --stream --parallel"
+    "lint": "lerna run lint --no-private --stream --parallel",
+    "lerna-version": "lerna version",
+    "lerna-publish": "lerna publish"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.6.1",
