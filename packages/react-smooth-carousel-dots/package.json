@@ -30,9 +30,13 @@
     "url": "https://github.com/timelessco/smooth-carousel-dots/issues"
   },
   "scripts": {
+    "version": "yarn build",
+    "prebuild": "rimraf dist",
+    "build": "concurrently yarn:build:*",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .js -d dist/esm --source-maps",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src --root-mode upward --extensions .js -d dist/cjs --source-maps",
     "format": "prettier --write \"./**/*.{js,jsx,json}\"",
-    "lint": "eslint src --ext .js --config ../../.eslintrc",
-    "version": "yarn lint"
+    "lint": "eslint src --ext .js --config ../../.eslintrc"
   },
   "peerDependencies": {
     "react": "16.x"
