@@ -1,8 +1,12 @@
 {
-  "**/*.{ts,tsx,js,jsx}": [
-    "prettier --write"
+  "**/*.{js,jsx}": [
+    "yarn format",
+    "yarn lint"
+  ],
+  "package.json": [
+    "yarn lint:package"
   ],
   "**/*.{md,yml,json,babelrc,eslintrc,prettierrc}": [
     "prettier --write"
-  ]
+  ],
 }

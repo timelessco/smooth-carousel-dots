@@ -9,36 +9,35 @@
     "react-carousel-dots",
     "carousel-component"
   ],
-  "sideEffects": false,
-  "author": "Timeless <hello@timeless.co>",
   "homepage": "https://github.com/timelessco/smooth-carousel-dots#readme",
+  "bugs": {
+    "url": "https://github.com/timelessco/smooth-carousel-dots/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timelessco/smooth-carousel-dots.git"
+  },
   "license": "MIT",
+  "author": "Timeless <hello@timeless.co>",
+  "sideEffects": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist",
     "src"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/timelessco/smooth-carousel-dots.git"
-  },
-  "bugs": {
-    "url": "https://github.com/timelessco/smooth-carousel-dots/issues"
-  },
   "scripts": {
-    "version": "yarn build",
     "prebuild": "rimraf dist",
     "build": "concurrently yarn:build:*",
-    "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .js -d dist/esm --source-maps",
     "build:cjs": "cross-env BABEL_ENV=cjs babel src --root-mode upward --extensions .js -d dist/cjs --source-maps",
-    "format": "prettier --write \"./**/*.{js,jsx,json}\"",
-    "lint": "eslint src --ext .js --config ../../.eslintrc"
+    "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .js -d dist/esm --source-maps",
+    "prelint": " \"./**/*.{js,jsx,json}\"",
+    "version": "yarn build"
   },
   "peerDependencies": {
     "react": "16.x"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
