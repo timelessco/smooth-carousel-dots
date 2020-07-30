@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.2](https://github.com/timelessco/smooth-carousel-dots/compare/react-smooth-carousel-dots@0.0.1...react-smooth-carousel-dots@0.0.2) (2020-07-30)
+
+### ♻️ Chores
+
+- **bump:** :wrench: version bump
+  ([d524b50](https://github.com/timelessco/smooth-carousel-dots/commit/d524b50ba035507666a3625d3c1c56b93362404b))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## 0.0.1 (2020-07-15)
 
 ### ✨ Features
